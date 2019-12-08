@@ -1,8 +1,8 @@
 # ashwin_nandakumar_final_project
 
-## getting Started
+## Getting Started
 
-This is a project based on building a website. This website is built for Nature lovers 
+This is a project based on building a website. This website is built for Nature lovers. This build is mainly focused on website building with html and css.
 
 
 ### Prequisites 
