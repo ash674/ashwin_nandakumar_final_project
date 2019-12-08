@@ -1,0 +1,565 @@
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero*/
+
+.box {
+  background-color: #8ea86e;
+  color: #fff;
+  text-align: center;
+  margin: 20px;
+}
+
+div,p,body,header,footer,section,article,nav,h1,h2,h3,h4 { 
+margin: 0; 
+padding: 0; 
+} 
+
+img { 
+border: none; 
+margin: 0; 
+padding: 0; 
+}
+
+/*html selectors*/
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  background-color: #ededed;
+  /*http://www.heropatterns.com/*/
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23c8c8c8' fill-opacity='0.33' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+/*a:link is for not visited, a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited { 
+text-decoration:none; 
+}
+
+a:hover, a:active { 
+text-decoration:none; 
+ }
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+  display: none;
+}
+
+/*-- End hidden --*/
+
+/*-- Start Container --*/
+
+.container
+{
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+/*-- End Container --*/
+
+/*-- Start Header --*/
+
+.mainHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.logoHeader
+{
+  width: 220px;
+  margin-left: 20px;
+
+}
+
+hr {
+  opacity: 60%;
+  width: 980px;
+  margin-top: 5px;
+}
+
+.greybox {
+  width: 1000px;
+  height: 20px;
+  background-color: grey;
+}
+
+.mainNavigation
+{
+  width: 500px;
+  height: 25px;
+  margin-top: 70px;
+  padding-top: 70px;
+  padding-left: 50px;
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+.mainNavigation ul
+{
+  list-style-type: none;
+  padding: 0;
+}
+
+.mainNavigation ul li {  
+  font-size: 17px;
+  display: inline;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.mainNavigation ul li a
+{
+	color: black;
+  padding: 5px;
+}
+
+.mainNavigation ul li a:hover {
+  padding: 5px;
+  background-color: #45CC4A;
+}
+
+.selectedPage
+{
+  padding: 5px 0px 5px 0px;
+  background-color: #ECEDF0;
+}
+
+/*-- End Header --*/
+
+/*-- Start Header --*/
+
+.picture
+{
+font-family: "vivaldi italic", vivaldi, Arial, sans-serif;
+margin-left: 10px;
+  height: 612px;
+  width: 980px;
+  position: relative; /*set to relative to anything that uses absolute inside will positioned to the top left corner of this element*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+
+.picture1
+{
+
+  height: 490px;
+  width: 980px;
+  position: relative; /*set to relative to anything that uses absolute inside will positioned to the top left corner of this element*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.pictureIndex {
+  background: url(../images/mmed-1050/image1.jpg) no-repeat bottom; 
+}
+
+.pictureContent {
+	background: url(../images/mmed-1050/image8.jpg) no-repeat bottom;
+}
+
+.pictureAbout {
+  background: url(../images/mmed-1050/image5.jpg) no-repeat bottom; 
+}
+
+.pictureContact {
+  background: url(../images/mmed-1050/contact_header.jpg) no-repeat bottom; 
+}
+
+.picture h2
+{
+  color: #45CC4A;
+  font-size: 31px;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.picture h3
+{
+  font-size: 14px;
+  color: black;
+  text-align: center;
+  font-weight:normal;
+  margin-bottom: 10px;
+}
+
+
+
+
+/*-- End Hero --*/
+
+/*-- Start Index --*/
+
+.contentPosition
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.contentPosition h3 {
+	font-family: "vivaldi italic", vivaldi, Arial, sans-serif;
+	font-size: 25px;
+}
+
+.contentPosition1
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.contentPosition p
+{
+	font-family: "bodoni MT", bodoni, Arial, sans-serif;
+	margin-top: 5px;
+  line-height: 22px;
+  color: #666;
+  font-size: 20px;
+}
+
+.contentPosition h3 {
+	margin-top: 10px;
+color: #45CC4A;
+}
+
+.contentPosition p {
+	color: black;
+}
+
+.image1, .image2, .image3
+{
+  color: #fff;
+  width: 300px;
+}
+
+
+.image1, .image2 
+{
+  padding-right: 10px;
+  border-right: 1px solid gray;
+}
+
+.aboutImage1, .aboutImage
+{
+  color: #fff;
+  width: 300px;
+}
+
+.contactImage {
+color: #fff;
+  width: 300px;
+}
+
+
+
+.submitBut
+{
+  display: block;
+  width: 117px;
+  padding: 15px;
+  color: #FFF;
+  background-color: #45CC4A;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.submitBut:hover
+{
+  background-color: #1F8022;
+} 
+
+.namePosition {
+	margin-top: 45px;
+	margin-right: 13px;
+}
+
+/*-- End Index --*/
+
+ /*Gallery Page*/
+
+#mainPosition {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  width: 940px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#mainPosition h2 {
+  font-size: 30px;
+  width: 940px;
+  color: #2073a8;
+  background-color: #ddeff7;
+  margin-bottom: 40px;
+  padding: 8px 0px 8px 5px;
+
+}
+
+.Imageposition {
+  width: 220px;
+  margin-bottom: 40px;
+}
+
+.Imageposition img {
+  border: 1px solid #666;
+}
+
+.Imageposition h3 {
+  border-top: dashed 1px #666;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  color: #2073a8;
+  font-size: 18px;
+}
+
+.Imageposition p {
+  font-size: 12px;
+  margin-top: 0;
+  border-bottom: 1px solid #666;
+  padding-bottom: 15px;
+}
+
+/*-- End Gallery --*/
+
+/*-- Contact Page --*/
+
+#mainContact {
+font-family: "bodoni MT", bodoni, Arial, sans-serif;
+	font-size: 17px;
+  width: 940px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+}
+
+
+.mainContent {
+	width: 940px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+}
+
+.mainContent h2 {
+	color: black;
+	margin-bottom: 3px;
+
+}
+
+
+
+#mainContact h2 {
+	font-family: "vivaldi italic", vivaldi, Arial, sans-serif;
+  font-size: 30px;
+  color: #45CC4A;
+  background-color: #ECF2EF;
+  margin-bottom: 10px;
+  padding: 8px 0px 5px 10px;
+  width: 940px;
+}
+
+#contactArea {
+  width: 469px;
+  border-right: solid 1px #CCC;
+  margin-bottom: 30px;
+}
+
+
+#contactText {
+  font-size: 21px;
+  margin-bottom: 30px;
+  width: 340px;
+}
+
+.contactForm {
+  margin-top: 30px;
+}
+
+
+
+fieldset {
+  border: none;
+  padding: 0px;
+}
+
+
+input, textarea  {
+  font-size: 11px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 300px;
+  height: 10px;
+  background-color: #efefef;
+  display: block;
+  border: 1px solid #999;
+  color: #333;
+}
+
+#comments {
+  width: 360px;
+  height: 200px;
+}
+
+#submit {
+  display: block;
+  width: 75px;
+  height: 30px;
+  text-align: center;
+  margin-top: 30px;
+  color: #FFF;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #45CC4A;
+  font-size: 14px;
+
+}
+#submit1 {
+  display: block;
+  width: 75px;
+  height: 30px;
+  text-align: center;
+  margin-top: 30px;
+  color: #FFF;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #45CC4A;
+  font-size: 14px;
+
+}
+
+
+#articleArea {
+  width: 380px;
+  margin-left: 90px;
+}
+
+
+#articleArea h3 {
+  font-size: 21px;
+  margin-top: 0;
+  color: #45CC4A;
+}
+
+#articleArea ul {
+  list-style-type: none;
+  padding: 0;
+} 
+
+/*-- Start Footer --*/
+
+.mainFooter {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  background-color: #ccc;
+  justify-content: flex-start;
+  height: 125px;
+  background: url(../images/footer_bg.jpg) repeat-x;
+}
+
+.logoNavigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoFooter {
+  margin-top: 25px;
+  margin-bottom: 20px; /*for nav underneath, nav can't use margin on floated element above*/
+  margin-left: 20px;
+}
+
+.footerNavigation {
+	font-size: 17px;
+	margin-top: 35px;
+  width: 380px;
+  height: 25px;
+  margin-left: 30px;
+
+}
+
+.footerNavigation ul {
+  padding: 0;
+  list-style-type: none;
+  width: 500px;
+  margin-left: 0;
+}
+
+.footerNavigation ul li { 
+  cursor: pointer;
+  display: inline;
+  margin-right: 25px;
+  font-size: 12px;  
+}
+
+.footerNavigation ul li a {
+  color: #333;
+}
+
+.footerNavigation ul li a:hover {
+  color: #999;
+}
+
+.socialMediaIcons {
+  height: 45px;
+  margin-left: auto;
+  margin-top: 28px;
+  margin-right: 5px;
+}
+
+#iconNavigation img {
+  width: 45px;
+  height: 45px;
+}
+
+#iconNavigation {
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+
+#iconNavigation li {
+  display: inline;
+  margin-right: 10px;
+}
+
+#iconNavigation li a {
+  filter: grayscale(100%);
+}
+
+#iconNavigation li a:hover {
+  filter: grayscale(0%);
+}
+
+/*-- End Footer --*/

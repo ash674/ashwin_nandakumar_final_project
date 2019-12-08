@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <title>Nature's Call - Official Website</title>  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="images/headlogo.jpg">  
+</head>
+<body>
+  <div class="container">
+    <h1 class="hidden">Nature's Call</h1>
+    <section class="greybox">
+    	<h2 class="hidden">greybox</h2>
+    </section>
+
+    <header class="mainHeader">
+      <div class="logoHeader">
+        <img src="images/mmed-1050/logo1.jpg" alt="Nature's Call Logo"  id="logo">
+      </div>
+      <nav class="mainNavigation">
+        <h2 class="hidden">Main Navigation</h2>
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="content.html">Contact</a></li>
+               <li><a href="about.html">About</a></li>
+               <li class="selectedPage"><a href="#">Contact</a></li>
+            </ul>
+      </nav>
+    </header>
+<hr>
+         
+        <main>
+        <section id="mainContact"> <!--start mainGallery-->
+                    <h2>Contact Us</h2>
+        	<section id="contactArea"><!--start contactArea-->
+                <h2 class="hidden">Contact form</h2>
+                <p id="contactText">For more information about our various packages or to book a trip please use the form below.
+            </p> 
+            <form id="contactForm" action="form.php" method="post">
+                    <label for="name">Name: (required)</label>
+                    <input type="text" required id="name" name="fullName" size="30" placeholder="Enter your name">
+                    
+                    <label for="email">E-mail: (will not be published)</label>
+                    <input type="email" required id="email" size="30" placeholder="Enter your Email">
+                    
+                    
+                    <label for="phone">Phone: (required)</label>
+                    <input type="tel" required id="phone" size="30" placeholder="Enter Phone Number">
+                    
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments" required cols="50" rows="8"></textarea>
+                    
+                    <label for="human">What is 5 + 10?</label>
+                    <input type="text" required id="human" size="30" placeholder="What is 5 + 4?">
+                   
+                    <input id="submit" type="submit" value="Submit">
+            </form>
+        	</section><!--end contactArea-->  
+            
+            <section id="articleArea"><!--start mapArea-->
+            	<h3>Subscribe to our Articles</h3>
+                <p>Subscribe to our articles and get constant updates from our site </p><br>
+                <form action="form.php" method="post">
+                 <label>Email: </label>
+                 <input type="email" required size="30" placeholder="Enter your Email">	
+
+                 <p>(OR)</p> <br>
+
+                 <label >Phone: (required)</label>
+                    <input type="tel" required  size="30" placeholder="Enter Phone Number">
+
+                    <input id="submit1" type="submit" value="Submit">
+                </form>
+
+            </section><!--end mapArea-->      
+        </section><!--end mainContact-->
+    </main>
+<hr>
+    <footer class="mainFooter">
+      <div class="logoNavigation">
+        
+        <nav class="footerNavigation">
+          <h2 class="hidden">Footer navigation</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                   	<li><a href="content.html">Content</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+        </nav>
+      </div>  
+
+      <div class="socialMediaIcons">
+        <h2 class="hidden">Social Media</h2>
+        <ul id="iconNavigation">
+            <li id="facebook">
+              <a href="http://www.facebook.com">
+                <img src="images/facebook.svg" alt="facebook">
+              </a>
+            </li>
+            <li id="twitter">
+              <a href="http://www.twitter.com">
+                <img src="images/twitter.svg" alt="twitter">
+              </a>
+            </li>
+            <li id="youtube">
+              <a href="http://www.youtube.com">
+                <img src="images/youtube.svg" alt="youtube">
+              </a>
+           </li>
+        </ul>
+      </div>
+       <section class="namePosition">
+       	       <h2 class="hidden">namePositioning</h2>
+      <p>/nature's call</p>     
+    </section>     
+    </footer>
+    </div><!--end container-->
+</body>
+</html>
